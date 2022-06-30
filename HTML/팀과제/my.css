@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    /*font-family: Arial,Helvetica,sans-serif;*/
+}
+
+
+.main{
+    width: 100%;
+    height: 500px;
+    background-image: url("이미지/main_pic.webp");
+    background-size: cover;
+    padding-top: 110px;
+    color: white;
+}
+
+.padding-size{
+    padding: 0 300px;
+}
+/*<note>
+300px = 약 19%
+혹시 퍼센트로 바꾸려면 참고할 것
+
+현재 메인 박스 부분에 저희 의논한대로 padding 300px 넣어놨는데 
+만들고 보니까 브라우저 창 크기를 줄였을 때 element 변화가 너무 큰 것 같아서
+전체 화면만 본다면 상관없겠지만, 반응형 화면 고려한다면 말씀하셨던 것처럼 
+padding값을 픽셀 대신 퍼센트로 바꾸는 것도 좋을 것 같아요!*/
+
+.plus{
+    color: #FBD403;
+    font-size: 84px;
+    font-weight: 900;
+    position: absolute;
+    top: 35px;
+    left: 260px;
+}
+/*
+<note>
+플러스 아이콘은 제 폰트어썸 kit code가 왜인지 안먹혀서 일단 그냥 키보드 + 기호로 넣어놨습니다..ㅠㅠ 
+아래쪽에서 무슨 아이콘을 쓰실지는 모르겠지만 더 좋은 쪽으로 통일시키면 좋을 것 같아요 */
+
+.main__box__slogan{
+    position: relative;
+    margin-bottom: 70px;
+}
+
+/*줄간격 맞추기*/
+.main__box__slogan > p{
+    line-height: 1em; 
+    margin: 2px 0;
+}
+
+.main__btn{
+    width: 160px;
+    height: 45px;
+    border: 2px solid white;
+    background-color: transparent;
+    margin: 40px 0px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.main__btn:first-child{
+    margin-right: 20px;
+}
+.main__btn:last-child{
+    margin-left: 20px;
+}
+
+.main__btn:hover{
+    color: #FBD403;
+    border-color: #FBD403;
+}
+
+
+.sub{
+    width: 100%;
+    height: 350px;
+    background-color: #FBD403;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub__box{  
+    display: flex;
+    color: black;
+}
+
+.sub__box__charge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.sub__box__charge__img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sub__box__charge__img img{
+    width: 60px;
+    height: 60px;
+}
+
+
+/*중복 사용 가능성 높은 font class는 따로 빼서 정의*/
+.font--lg{
+    font-size: 60px;
+}
+.font--m{
+    font-size: 29px;
+}

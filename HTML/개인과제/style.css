@@ -1,0 +1,194 @@
+body{
+    background-image: url('design/background4.jpg');
+    background-size: 100%;
+    padding: 10px;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main{
+    width: 380px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+#main .main__header{
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+#login-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.login-form__input{
+    display: flex;
+    flex-direction: column;
+}
+.login-form__input input:not([type="checkbox"]){
+    width: 380px;
+    padding: 12px 0px;
+    margin-bottom: 17px;
+    border-bottom: solid 2px white;
+    font-size: 18px;
+}
+.login-form__input input:not([type="checkbox"])::placeholder{
+    color: white;
+}
+
+.login-form__input input:not([type="checkbox"]):focus{
+    opacity: 1;
+}
+
+.style--none{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+.hidden{
+    display: none;
+    color: white;
+}
+.login-form__input input:first-child:focus + .hidden{
+    display: inline;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.circle_chk{
+    display: inline-block;
+    width: 15px; height: 15px;
+    border: solid 1px white;
+
+    border-radius: 50%;
+    position: relative; 
+    top: 4px;
+
+    cursor: pointer;
+    margin-right: 7px;
+    padding: 2px;
+}
+.circle_chk:after{
+    content: '\2713';
+    font-size: 16px; 
+    color: white;
+    position: absolute; top: -2.5px; left: 3px;
+}
+#chk:checked + .circle_chk{
+    background-color: #FEE502;
+}
+
+#chk{ position: absolute; left: -999em; }
+
+
+
+
+.login-form__btn{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login-form__btn button{
+    width: 380px;
+    height: 50px;
+    padding: 12px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  color: black;
+}
+#login-form__btn__login{
+    background-color: #FEE502;
+}
+#login-form__btn__qr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#login-form__btn__qr img{
+    margin-right: 10px;
+}
+
+.hr{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.divider{
+    width: 175px;
+    height: 0.5px;
+    background-color: white;
+    margin: 0 10px;
+}
+
+
+.user-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info .info{
+    display: flex;
+    align-items: center;
+}
+
+#divide::after{
+    content: ' \007C';
+}
+.info :last-child{
+    margin-left: 5px;
+}
+
+
+.font--s{
+    font-size: small;
+}
+.font--m{
+    font-size: 15px;
+}
+.font--l{
+    font-size: 16px;
+}
+.font--bold{
+    font-weight: 800;
+}
+.font--opacity{
+    opacity: 0.7;
+}
+
+
+footer{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer a,
+footer select{
+    margin:0px 10px;
+}
+footer span{
+    margin-top: 10px;
+}

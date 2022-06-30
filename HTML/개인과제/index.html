@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakao Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <img src="design/logo.png" width="136px" height="30px"> 
+    </header>
+    <section>
+        <div id="main">
+        <img class="main__header" src="design/login_txt01.png" width="308px" height="100px">
+        <div id="main__content">
+          <form class="login-form">
+              <div class="login-form__input">
+                  <input class="style--none font--l font--opacity" type="text" placeholder="KakaoMail ID, email, phone number">
+                  <span class="hidden font--s"><span class="font--s font--bold">TIP </span>Please enter your ID if you have already subscribed to KakaoMail.</span>
+                  <input class="style--none font--l font--opacity" type="password" placeholder="Password">
+                  <label for="chk" class="checkbox">
+                      <input type="checkbox" id="chk"> 
+                      <div class="circle_chk"></div>
+                      <span class="font--m">Stay Logged In</span>
+                  </label>                 
+              </div>
+              <div class="login-form__btn">
+                  <button id="login-form__btn__login" class="font--l">Log In</button>
+                  <div class="hr">
+                      <div class="divider font--opacity"></div>
+                      <span class="font--s">or</span>
+                      <div class="divider font--opacity"></div>
+                  </div>
+                  <button id="login-form__btn__qr" class="font--l">
+                      <img src="design/qrcode.png" alt="qr코드" width="15px" height="15px">
+                      <span>Log in with QR code</span>
+                  </button>
+              </div>
+          </form>
+
+          <div class="user-info font--s">
+              <a href="#">Sign Up</a>
+              <div class="info">
+                  <a href="#" id="divide">Kakao Account</a>
+                  <a href="#">Reset Password</a>
+              </div>     
+          </div>
+        </div>
+    </div>
+    <footer>
+            <div class="font--s">
+            <a href="#">Terms of Service</a>
+            <a href="#" class="font--bold">Privacy Policy</a>
+            <a href="#">Operation Policy</a>
+            <a href="#">Customer Service</a>
+            <a href="#">Notices</a>
+            <select name="lang" class="font--s style--none">
+                <option value="1">한국어</option>
+                <option value="2" selected>English</option>
+                <option value="3">日本語</option>
+            </select>
+            </div>
+            <span class="font--s">Copyright © Kakao Corp. All rights reserved.</span>
+    </footer>
+    </section>
+</body>
+</html>
